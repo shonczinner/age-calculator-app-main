@@ -18,21 +18,46 @@
 
 body{
  background:var(--off-white);
- padding:5em;
+ padding-top:5rem;
+ padding-left:max(5VW - 20px, 0px);
+ padding-right:max(5VW - 20px, 0px);
  padding-bottom:0px;
+ margin:0px;
 }
-
 
 #calculator-container-container{
     background: var(--off-white);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding:15em;
+    padding-top:10rem;
+    padding-bottom:10rem;
+    padding-left:max(20VW - 20px, 10px);
+    padding-right:max(20VW - 20px, 10px);
 }
 
 #calculator-container{
     background: white;
-    border-radius: 1em;
-    border-bottom-right-radius: 10em;
+    border-radius: 2rem;
+    border-bottom-right-radius: 5rem;
+  
+    padding: 2rem;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#input-container{
+    display: flex;
+    flex-direction: row;
+    margin-bottom:10px;
+    padding-bottom:10px;
+    border-bottom: 1px solid var(--light-grey); 
+}
+
+#input-container button{
+    position:relative;
+    bottom:-10px;
+    margin-left:auto;
+    transform: translateY(50%);       
 }
 
 footer{
@@ -44,6 +69,14 @@ footer{
 }
 
 .date-input {
-    display: inline-block;
+    font-weight: bold;
+    margin-right:10px;
+    width: 10%;
+    min-width:2em;
+}
+
+.date-input input{
+  width:100%;
+  min-width:2em;
 }
 
