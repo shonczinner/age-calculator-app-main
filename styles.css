@@ -15,49 +15,86 @@
 .attribution a { color: hsl(228, 45%, 44%); }
 
 
-
 body{
  background:var(--off-white);
- padding-top:5rem;
- padding-left:max(5VW - 20px, 0px);
+ padding-top:max(40VH - 270px, 0px);
+ padding-bottom:max(40VH - 270px, 0px);
+ padding-left:max(10VW - 60px, 0px);
  padding-right:max(5VW - 20px, 0px);
- padding-bottom:0px;
+
  margin:0px;
 }
 
 #calculator-container-container{
     background: var(--off-white);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding-top:10rem;
-    padding-bottom:10rem;
-    padding-left:max(20VW - 20px, 10px);
-    padding-right:max(20VW - 20px, 10px);
+    min-width: 400px;
+    padding-top: max(20VH - 120px + 50px, 50px);
+    padding-bottom: max(20VH - 120px + 50px, 50px);
+    padding-left:max(30VW - 120px, 0px);
+    padding-right:max(30VW - 120px, 0px);
 }
 
 #calculator-container{
     background: white;
     border-radius: 2rem;
     border-bottom-right-radius: 5rem;
-  
     padding: 2rem;
-    
-    margin-left: auto;
-    margin-right: auto;
 }
 
 #input-container{
+    position: relative;     
     display: flex;
     flex-direction: row;
-    margin-bottom:10px;
-    padding-bottom:10px;
-    border-bottom: 1px solid var(--light-grey); 
+    margin-bottom:50x;
+    padding-bottom:50px;
+    border-bottom: 1px solid var(--light-grey);
 }
 
-#input-container button{
-    position:relative;
-    bottom:-10px;
-    margin-left:auto;
-    transform: translateY(50%);       
+#input-container .button-div{
+    position:relative;  
+    width:100%;
+    border:1px solid black;
+}
+
+#input-container button{    
+    margin: 0;
+    position: absolute;
+    bottom:0px;
+    left: 100%;
+    -ms-transform: translate(-100%, 50%);
+    transform: translate(-100%, 50%);
+}
+
+
+.date-input {
+    color: grey;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right:3em;
+    width:4em;
+}
+
+.date-input input{
+    font-weight: bold;
+    font-size: larger;
+    width:4em;
+    margin-top:10px;
+    padding:10px;
+}
+
+.date-input input::placeholder {
+    color: grey;
+  }
+
+#result-container{
+    font-weight:bold;
+    font-size:80px;
+    font-style: italic;
+}
+
+#result-container .num{
+    color:purple;
 }
 
 footer{
@@ -68,15 +105,15 @@ footer{
     text-align: center;
 }
 
-.date-input {
-    font-weight: bold;
-    margin-right:10px;
-    width: 10%;
-    min-width:2em;
-}
+@media screen and (max-width:500px) {
+    #input-container button{    
+        left: 50%;
+        -ms-transform: translate(-50%, 50%);
+        transform: translate(-50%, 50%);
+    }
 
-.date-input input{
-  width:100%;
-  min-width:2em;
-}
+    #calculator-container-container{
+        box-shadow: none;
 
+    }
+}
