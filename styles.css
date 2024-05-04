@@ -9,6 +9,18 @@
     --smokey-grey: hsl(0, 1%, 44%);
     --off-black: hsl(0, 0%, 8%);
   }
+
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('assets/fonts/Poppins-Bold.ttf') format('truetype'),
+            url('assets/fonts/Poppins-BoldItalic.ttf') format('truetype'),
+            url('assets/fonts/Poppins-ExtraBold.ttf') format('truetype'),
+            url('assets/fonts/Poppins-ExtraBoldItalic.ttf') format('truetype'),
+            url('assets/fonts/Poppins-Italic.ttf') format('truetype'),
+            url('assets/fonts/Poppins-Regular.ttf') format('truetype');
+}
+
   
 
 .attribution { font-size: 11px; text-align: center; }
@@ -23,6 +35,7 @@ body{
  padding-right:max(5VW - 20px, 0px);
 
  margin:0px;
+ font-family: 'Poppins';
 }
 
 #calculator-container-container{
@@ -46,8 +59,8 @@ body{
     position: relative;     
     display: flex;
     flex-direction: row;
-    margin-bottom:50x;
-    padding-bottom:50px;
+    margin-bottom:20px;
+    padding-bottom:40px;
     border-bottom: 1px solid var(--light-grey);
 }
 
@@ -64,6 +77,24 @@ body{
     left: 100%;
     -ms-transform: translate(-100%, 50%);
     transform: translate(-100%, 50%);
+    background-image: url('assets/images/icon-arrow.svg');
+    background-color: var(--purple);
+    background-size: 50%;
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-position: center; /* Center the background image */
+    border: none;
+    height:44px;
+    width:46px;
+    border-radius: 50%;
+}
+
+#input-container button:hover{    
+    background-color: var(--smokey-grey);
+}
+
+
+#input-container button:active{    
+    background-color: var(--off-black);
 }
 
 
@@ -89,12 +120,12 @@ body{
 
 #result-container{
     font-weight:bold;
-    font-size:80px;
+    font-size:50px;
     font-style: italic;
 }
 
 #result-container .num{
-    color:purple;
+    color:var(--purple);
 }
 
 footer{

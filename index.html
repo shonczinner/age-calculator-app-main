@@ -6,7 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
-  <script src="index.js"></script>
+  <script src="index.js" defer></script>
   
   <title>Frontend Mentor | Age calculator app</title>
 </head>
@@ -17,19 +17,19 @@
         <div class = 'date-input'> 
           Day
           <br>
-          <input type="number" placeholder="DD">
+          <input type="text" pattern = "\d*" placeholder="DD" title="Enter a valid day (01-31)" class='day'>
         </div>
         <div class = 'date-input'>
           Month
           <br>
-          <input type="number" placeholder="MM">
+          <input type="text" pattern = "\d*" placeholder="MM" title="Enter a valid month (01-12)" class='month'>
         </div>
         <div class = 'date-input'> 
           Year
           <br>
-          <input type="number" placeholder="YYYY">
+          <input type="text" pattern = "\d*" placeholder="YYYY" title="Enter a valid year (e.g., 2022)" class='year'>
         </div>
-        <button>Submit</button>
+        <button></button>
  
      
       </div>
