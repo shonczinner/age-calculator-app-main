@@ -2,13 +2,13 @@ var lens = {'day':2,
             'month':2,
             'year':4}
 
-function padAndTruncateInput(){
-    var value = parseInt(this.value, 10);
-    var len = lens[this.className]
+function padAndTruncateInput(e){
+    var value = parseInt(e.currentTarget.value, 10);
+    var len = lens[e.currentTarget.className]
     if (isNaN(value)) {
-        this.value = '';
+        e.currentTarget.value = '';
     } else {
-        this.value = value.toString().padStart(len, '0').slice(-len);
+        e.currentTarget.value = value.toString().padStart(len, '0').slice(-len);
     }
 }
 
