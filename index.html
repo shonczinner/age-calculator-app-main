@@ -6,6 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/date-fns@3.6.0/cdn.min.js"></script>
   <script src="index.js" defer></script>
   
   <title>Frontend Mentor | Age calculator app</title>
@@ -29,18 +30,18 @@
           <br>
           <input type="text" pattern = "\d*" placeholder="YYYY" title="Enter a valid year (e.g., 2022)" class='year'>
         </div>
-        <button></button>
+        <button id="calculate-age"></button>
  
      
       </div>
 
       
       <div id="result-container">
-        <span class="num">--</span> <span class="time">years</span>
+        <span class="num" id="result-years">--</span> <span class="time">years</span>
         <br>
-        <span class="num">--</span> <span class="time">months</span>
+        <span class="num" id="result-months">--</span> <span class="time">months</span>
         <br> 
-        <span class="num">--</span> <span class="time">days</span>
+        <span class="num" id="result-days">--</span> <span class="time">days</span>
       </div>
     </div>
   </div>
