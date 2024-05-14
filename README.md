@@ -11,10 +11,6 @@ This is a solution to the [Age calculator app challenge on Frontend Mentor](http
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -36,14 +32,12 @@ Users should be able to:
 
 ### Screenshot
 
-![See the screenshot here.](./screenshot.jpg)
+![See the screenshot here.](https://raw.githubusercontent.com/shonczinner/age-calculator-app-main/main/screenshot.JPG)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-
-## My process
+- Solution URL: [https://shonczinner.github.io/age-calculator-app-main/](https://shonczinner.github.io/age-calculator-app-main/)
 
 ## My process
 
