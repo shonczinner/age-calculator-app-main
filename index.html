@@ -19,16 +19,24 @@
           Day
           <br>
           <input type="text" pattern = "\d*" placeholder="DD" title="Enter a valid day (01-31)" class='day'>
+          <span class="error" id="invalid-date-error">Must be a valid date.</span>
+          <span class="error" id="past-date-error">Must be in the past.</span>
+          <span class="error" id="day-missing-error">This field is required.</span>
+          <span class="error" id="day-bad-error">Must be a valid day.</span>
         </div>
         <div class = 'date-input'>
           Month
           <br>
           <input type="text" pattern = "\d*" placeholder="MM" title="Enter a valid month (01-12)" class='month'>
+          <span class="error" id="month-missing-error">This field is required.</span>
+          <span class="error" id="month-bad-error">Must be a valid month.</span>
         </div>
         <div class = 'date-input'> 
           Year
           <br>
           <input type="text" pattern = "\d*" placeholder="YYYY" title="Enter a valid year (e.g., 2022)" class='year'>
+          <span class="error" id="year-missing-error">This field is required.</span>
+
         </div>
         <button id="calculate-age"></button>
  
