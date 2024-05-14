@@ -24,9 +24,8 @@ function getGivenDate(){
     //const givenDate = new Date(givenYear,givenMonth-1,givenDay)
     const givenDate = dateFns.parse([givenYear,givenMonth,givenDay].join('-'), 'yyyy-MM-dd', new Date());
 
-    const givenDateUTC = new Date(Date.UTC(givenDate.getFullYear(), givenDate.getMonth(), givenDate.getDate()));
-    givenDateUTC.setHours(0, 0, 0, 0); // Set time to midnight
-    return givenDateUTC;
+    givenDate.setUTCHours(0, 0, 0, 0); // Set time to midnight
+    return givenDate;
 }
 
 function getCurrentDate(){
